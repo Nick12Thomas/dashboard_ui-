@@ -8,9 +8,9 @@ class HeaderWidget extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(48.0),
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween, // To space out Home and Search
+        mainAxisAlignment:
+            MainAxisAlignment.spaceBetween, // To space out Home and Search
         children: [
-          // Title Text (Home)
           const Text(
             "Home",
             style: TextStyle(
@@ -18,14 +18,13 @@ class HeaderWidget extends StatelessWidget {
               fontWeight: FontWeight.bold,
             ),
           ),
-          // Search TextField
           SizedBox(
-            width: 650, // Adjust the width as needed
+            width: 650,
             child: TextField(
               decoration: InputDecoration(
                 filled: true,
                 fillColor: Color(0xFF301934),
-                enabledBorder:   OutlineInputBorder(
+                enabledBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(12.0),
                   borderSide: const BorderSide(color: Colors.transparent),
                 ),

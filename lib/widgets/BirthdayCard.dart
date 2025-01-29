@@ -16,14 +16,12 @@ class BirthdayCardWidget extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Title for the Birthday card
             const Text(
               "Today's Birthdays",
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 10),
 
-            // Today's Birthday
             const Text(
               "Today’s Birthday:",
               style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
@@ -34,7 +32,6 @@ class BirthdayCardWidget extends StatelessWidget {
             ),
             const SizedBox(height: 20), // Space between sections
 
-            // Avatars of the birthday people
             const Row(
               children: [
                 CircleAvatar(
@@ -50,7 +47,6 @@ class BirthdayCardWidget extends StatelessWidget {
             ),
             const SizedBox(height: 20), // Space between sections
 
-            // Total Birthdays today
             const Text(
               "Total Birthdays:",
               style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
@@ -60,8 +56,6 @@ class BirthdayCardWidget extends StatelessWidget {
               style: TextStyle(fontSize: 14, color: Colors.grey),
             ),
             const SizedBox(height: 20), // Space between sections
-
-            // Button to send wishes
             Center(
               child: ElevatedButton(
                 onPressed: () {
@@ -69,7 +63,8 @@ class BirthdayCardWidget extends StatelessWidget {
                 },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.blue, // Button color
-                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(8),
                   ),

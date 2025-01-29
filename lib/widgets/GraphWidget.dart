@@ -7,11 +7,10 @@ class LineChartWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 300, // Adjust graph height
+      height: 300,
       padding: const EdgeInsets.all(16),
       child: Column(
         children: [
-          // Legend inside the graph
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -26,7 +25,7 @@ class LineChartWidget extends StatelessWidget {
           Expanded(
             child: LineChart(
               LineChartData(
-                gridData: FlGridData(show: true), // Show grid lines
+                gridData: const FlGridData(show: true),
                 titlesData: FlTitlesData(
                   leftTitles: AxisTitles(
                     sideTitles: SideTitles(
@@ -40,7 +39,7 @@ class LineChartWidget extends StatelessWidget {
                         }
                         return Container();
                       },
-                      reservedSize: 30, // Space for Y-axis labels
+                      reservedSize: 30,
                     ),
                   ),
                   bottomTitles: AxisTitles(
@@ -48,7 +47,8 @@ class LineChartWidget extends StatelessWidget {
                       showTitles: true,
                       getTitlesWidget: (value, meta) {
                         final years = [2015, 2016, 2017, 2018, 2019, 2020];
-                        if (value.toInt() >= 0 && value.toInt() < years.length) {
+                        if (value.toInt() >= 0 &&
+                            value.toInt() < years.length) {
                           return Text(
                             years[value.toInt()].toString(),
                             style: const TextStyle(fontSize: 12),
@@ -56,11 +56,15 @@ class LineChartWidget extends StatelessWidget {
                         }
                         return Container();
                       },
-                      reservedSize: 30, // Space for X-axis labels
+                      reservedSize: 30,
                     ),
                   ),
-                  rightTitles: const AxisTitles(sideTitles: SideTitles(showTitles: false)), // Hide right labels
-                  topTitles: const AxisTitles(sideTitles: SideTitles(showTitles: false)), // Hide top labels
+                  rightTitles: const AxisTitles(
+                      sideTitles:
+                          SideTitles(showTitles: false)), // Hide right labels
+                  topTitles: const AxisTitles(
+                      sideTitles:
+                          SideTitles(showTitles: false)), // Hide top labels
                 ),
                 borderData: FlBorderData(
                   show: true,
@@ -70,27 +74,26 @@ class LineChartWidget extends StatelessWidget {
                   // Pending Line
                   LineChartBarData(
                     spots: [
-                      FlSpot(0, 15), // 2015 -> 15
-                      FlSpot(1, 25), // 2016 -> 25
-                      FlSpot(2, 35), // 2017 -> 35
-                      FlSpot(3, 20), // 2018 -> 20
-                      FlSpot(4, 30), // 2019 -> 30
-                      FlSpot(5, 45), // 2020 -> 45
+                      const FlSpot(0, 15),
+                      const FlSpot(1, 25),
+                      const FlSpot(2, 35),
+                      const FlSpot(3, 20),
+                      const FlSpot(4, 30),
+                      const FlSpot(5, 45),
                     ],
                     isCurved: true,
                     color: Colors.blue,
                     barWidth: 3,
                     belowBarData: BarAreaData(show: false),
                   ),
-                  // Done Line
                   LineChartBarData(
                     spots: [
-                      FlSpot(0, 5), // 2015 -> 5
-                      FlSpot(1, 10), // 2016 -> 10
-                      FlSpot(2, 15), // 2017 -> 15
-                      FlSpot(3, 30), // 2018 -> 30
-                      FlSpot(4, 35), // 2019 -> 35
-                      FlSpot(5, 50), // 2020 -> 50
+                      const FlSpot(0, 5), // 2015 -> 5
+                      const FlSpot(1, 10), // 2016 -> 10
+                      const FlSpot(2, 15), // 2017 -> 15
+                      const FlSpot(3, 30), // 2018 -> 30
+                      const FlSpot(4, 35), // 2019 -> 35
+                      const FlSpot(5, 50), // 2020 -> 50
                     ],
                     isCurved: true,
                     color: Colors.green,
@@ -106,7 +109,6 @@ class LineChartWidget extends StatelessWidget {
     );
   }
 
-  // Widget for Legend (Inside the Graph)
   Widget _buildLegend(Color color, String text) {
     return Row(
       children: [

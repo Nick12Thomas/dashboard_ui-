@@ -1,6 +1,6 @@
 import 'package:fitness_dashboard_ui/widgets/DataCards.dart';
 import 'package:fitness_dashboard_ui/widgets/GraphWidget.dart';
-import 'package:fitness_dashboard_ui/widgets/HeaderWidget.dart';// Import the graph
+import 'package:fitness_dashboard_ui/widgets/HeaderWidget.dart'; // Import the graph
 import 'package:flutter/material.dart';
 
 class DashboardWidget extends StatefulWidget {
@@ -14,7 +14,7 @@ class _MainScreenMenuState extends State<DashboardWidget> {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      backgroundColor: Color(0xFFF5F5F5), // Off-white background
+      backgroundColor: Color(0xFFF5F5F5),
       body: SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.all(16.0),
@@ -32,21 +32,21 @@ class _MainScreenMenuState extends State<DashboardWidget> {
                 ],
               ),
               SizedBox(height: 10),
-
-              // Last Card with the Graph
               Card(
                 elevation: 5,
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(12))),
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(12))),
                 child: Padding(
                   padding: EdgeInsets.all(16.0),
                   child: Column(
                     children: [
                       Text(
                         "Performance Over Time",
-                        style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                        style: TextStyle(
+                            fontSize: 16, fontWeight: FontWeight.bold),
                       ),
                       SizedBox(height: 10),
-                      LineChartWidget(), // Add the graph here
+                      LineChartWidget(),
                     ],
                   ),
                 ),

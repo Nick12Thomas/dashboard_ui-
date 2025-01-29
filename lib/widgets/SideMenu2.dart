@@ -10,7 +10,7 @@ class SideMenu2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Color(0xFF301934),
+      color: const Color(0xFF301934),
       child: Column(
         children: [
           Container(
@@ -18,26 +18,30 @@ class SideMenu2 extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.all(8.0),
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween, // Distribute space evenly
+                mainAxisAlignment:
+                    MainAxisAlignment.spaceBetween, // Distribute space evenly
                 children: [
-                  const SizedBox(width: 10,),
+                  const SizedBox(
+                    width: 10,
+                  ),
                   const Icon(Icons.newspaper),
                   const Icon(Icons.notifications_active),
                   const Icon(CupertinoIcons.power),
                   const SizedBox(width: 20),
-                  // Avatar aligned to the end of the row
                   Image.asset(
                     'assets/images/avatar.png',
-                    height: 40, // Adjust the size
+                    height: 40,
                   ),
                 ],
               ),
             ),
           ),
-          SizedBox(height: 10,),
-          CalendarCardWidget(),
-          BirthdayCardWidget(),
-          AnniversaryCardWidget(),
+          const SizedBox(
+            height: 10,
+          ),
+          const CalendarCardWidget(),
+          const BirthdayCardWidget(),
+          const AnniversaryCardWidget(),
         ],
       ),
     );

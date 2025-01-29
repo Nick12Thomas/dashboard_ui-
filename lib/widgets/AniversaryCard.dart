@@ -17,14 +17,11 @@ class AnniversaryCardWidget extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // Title for the Anniversary card
               const Text(
                 "Today's Anniversaries",
                 style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
               ),
               const SizedBox(height: 10),
-
-              // Today's Anniversary
               const Text(
                 "Today’s Anniversary:",
                 style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
@@ -34,8 +31,6 @@ class AnniversaryCardWidget extends StatelessWidget {
                 style: TextStyle(fontSize: 14, color: Colors.grey),
               ),
               const SizedBox(height: 20), // Space between sections
-
-              // Avatars of the couples
               const Row(
                 children: [
                   CircleAvatar(
@@ -50,8 +45,6 @@ class AnniversaryCardWidget extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 20), // Space between sections
-
-              // Total Anniversaries today
               const Text(
                 "Total Anniversaries:",
                 style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
@@ -61,8 +54,6 @@ class AnniversaryCardWidget extends StatelessWidget {
                 style: TextStyle(fontSize: 14, color: Colors.grey),
               ),
               const SizedBox(height: 20), // Space between sections
-
-              // Button to send anniversary wishes
               Center(
                 child: ElevatedButton(
                   onPressed: () {
@@ -70,7 +61,8 @@ class AnniversaryCardWidget extends StatelessWidget {
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.green, // Button color
-                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 16, vertical: 12),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(8),
                     ),
