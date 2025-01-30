@@ -88,12 +88,12 @@ class LineChartWidget extends StatelessWidget {
                   ),
                   LineChartBarData(
                     spots: [
-                      const FlSpot(0, 5), // 2015 -> 5
-                      const FlSpot(1, 10), // 2016 -> 10
-                      const FlSpot(2, 15), // 2017 -> 15
-                      const FlSpot(3, 30), // 2018 -> 30
-                      const FlSpot(4, 35), // 2019 -> 35
-                      const FlSpot(5, 50), // 2020 -> 50
+                      const FlSpot(0, 5),
+                      const FlSpot(1, 10),
+                      const FlSpot(2, 15),
+                      const FlSpot(3, 30),
+                      const FlSpot(4, 35),
+                      const FlSpot(5, 50),
                     ],
                     isCurved: true,
                     color: Colors.green,
