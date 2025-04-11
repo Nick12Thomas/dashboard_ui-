@@ -9,7 +9,7 @@ class CustomCardWidget extends StatelessWidget {
       height: 300,
       width: double.infinity,
       margin: const EdgeInsets.symmetric(
-          horizontal: 16, vertical: 8), // Add margin for spacing
+          horizontal: 16, vertical: 8),
       child: Card(
         elevation: 5,
         shape: RoundedRectangleBorder(
@@ -32,7 +32,7 @@ class CustomCardWidget extends StatelessWidget {
               Expanded(
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment
-                      .spaceEvenly, // Evenly distribute content
+                      .spaceEvenly,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const Text(

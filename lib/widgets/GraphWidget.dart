@@ -61,10 +61,10 @@ class LineChartWidget extends StatelessWidget {
                   ),
                   rightTitles: const AxisTitles(
                       sideTitles:
-                          SideTitles(showTitles: false)), // Hide right labels
+                          SideTitles(showTitles: false)),
                   topTitles: const AxisTitles(
                       sideTitles:
-                          SideTitles(showTitles: false)), // Hide top labels
+                          SideTitles(showTitles: false)),
                 ),
                 borderData: FlBorderData(
                   show: true,

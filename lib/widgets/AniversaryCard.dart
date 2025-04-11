@@ -32,12 +32,10 @@ class AnniversaryCardWidget extends StatelessWidget {
                   style: TextStyle(fontSize: 14, color: Colors.grey),
                 ),
                 const SizedBox(height: 20),
-
-                // Use Wrap instead of Row for avatars
-                Wrap(
+                const Wrap(
                   spacing: 10,
                   runSpacing: 10,
-                  children: const [
+                  children: [
                     CircleAvatar(
                       radius: 20,
                       backgroundImage: AssetImage('assets/images/avatar.png'),
@@ -65,7 +63,7 @@ class AnniversaryCardWidget extends StatelessWidget {
                   child: SizedBox(
                     width: constraints.maxWidth < 300
                         ? double.infinity
-                        : null, // full width for narrow cards
+                        : null,
                     child: ElevatedButton(
                       onPressed: () {
                         print("Send Wishes clicked");

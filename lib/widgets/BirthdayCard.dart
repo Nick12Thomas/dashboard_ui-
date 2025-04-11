@@ -8,9 +8,9 @@ class BirthdayCardWidget extends StatelessWidget {
     return Card(
       elevation: 5,
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(12), // Rounded corners
+        borderRadius: BorderRadius.circular(12),
       ),
-      margin: const EdgeInsets.all(16), // Margin around the card
+      margin: const EdgeInsets.all(16),
       child: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
@@ -30,7 +30,7 @@ class BirthdayCardWidget extends StatelessWidget {
               "John Doe, Jane Smith",
               style: TextStyle(fontSize: 14, color: Colors.grey),
             ),
-            const SizedBox(height: 20), // Space between sections
+            const SizedBox(height: 20),
 
             const Row(
               children: [
@@ -45,7 +45,7 @@ class BirthdayCardWidget extends StatelessWidget {
                 ),
               ],
             ),
-            const SizedBox(height: 20), // Space between sections
+            const SizedBox(height: 20),
 
             const Text(
               "Total Birthdays:",
@@ -55,7 +55,7 @@ class BirthdayCardWidget extends StatelessWidget {
               "2 people today",
               style: TextStyle(fontSize: 14, color: Colors.grey),
             ),
-            const SizedBox(height: 20), // Space between sections
+            const SizedBox(height: 20),
             Center(
               child: ElevatedButton(
                 onPressed: () {

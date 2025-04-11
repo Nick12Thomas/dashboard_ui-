@@ -6,10 +6,10 @@ class HeaderWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(24.0), // Reduced a bit for better mobile spacing
+      padding: const EdgeInsets.all(24.0),
       child: LayoutBuilder(
         builder: (context, constraints) {
-          // If the width is less than 600, stack items vertically
+
           bool isNarrow = constraints.maxWidth < 600;
 
           return isNarrow
